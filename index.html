@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <style>
+        body {
+            text-align: center;
+            background-image: url('https://wallpaperaccess.com/full/2029165.jpg');
+            background-size: cover;
+            background-attachment:fixed;
+            overflow-y: hidden;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .header {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            padding-inline-start: 20px;
+            padding-inline-end: 20px;
+            padding-block-start: 10px;
+            padding-block-end: 10px;
+            background-color: rgba(22, 36, 49, 0.705);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            color: aliceblue;
+            text-align: left;
+        }
+        button
+        {
+            background-color: rgb(8, 140, 255);
+            color: aliceblue;
+            border: none;
+            padding: 5px 10px;
+            outline: none;
+        }
+        button:hover{
+            transition-duration: 0.2s;
+            filter: brightness(0.7);
+        }
+        .right{
+            float: right;
+        }
+        .main{
+            /* background-color: red; */
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 50px;
+            overflow-y: scroll;
+        }
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: aliceblue;
+        }
+        .box{
+            background-color: rgba(40, 155, 255, 0.774);
+            color: aliceblue;
+            border-radius: 8px;
+            padding-inline-start: 20px;
+            padding-inline-end: 20px;
+            padding-block-start: 20px;
+            padding-block-end: 20px;
+            position: absolute;
+            /* width: 50%; */
+            left: 25%;
+            right: 25%;
+        }
+        .loader{
+            background-color: rgba(240, 248, 255, 0);
+            position: absolute;
+            padding: 40px 40px;
+            border-radius: 50%;
+            left: 45%;
+            top: 45%;
+            z-index: 100;
+            border-top: 4px rgb(0, 81, 255) solid;
+            border-bottom: 4px rgb(0, 81, 255) solid;
+            border-left: 4px rgb(0, 81, 255) solid;
+            border-right: 4px rgba(0, 81, 255, 0) solid;
+            animation: 0.5s infinite load;
+            animation-timing-function: cubic-bezier(1,1,1,1);
+        }
+        @keyframes load {
+            100%{transform: rotate(360deg);}
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invento Encrypter</title>
+</head>
+
+<body>
+    <div class="header">
+Invento Text Encrypter <button class="right" onclick="download()">Download</button>
+    </div>
+    <div class="main">
+<br><h1 id="anime"></h1><br><br>
+<h2>Product with less Docs</h2><br>
+<h3>Download now from the above button</h3><br><br>
+<div class="box">
+<h1> Why did we make this ? </h1><br><br>
+We made this by seeing the cyber threates arising <br>
+So we thought of making a way to communicate using <br>
+a secrect code. <br>To use this download it unzip it and open the dist <br>
+folder and click on the exe file and you are done :). <br> This is our little description
+</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h1>A Guide to Use</h1><br><br>
+<!-- <video width="80%" controls style="border-radius: 8px;">
+    <source src="https://6bt5age6nboutdggskfavw-on.drv.tw/guide.mp4" type="video/mp4">
+</video> -->
+<div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/639937499?h=301aadd6d8&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Description Video "></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</div>
+<div class="loader"></div>
+<script>
+    function download()
+    {
+        document.querySelector('.loader').style = "visibility: visible;";
+        setTimeout(gayab , 3000);
+        setTimeout(down , 3000);
+    }
+    function down()
+    {
+        window.open('https://6bt5age6nboutdggskfavw-on.drv.tw/downloader/encrypter.zip');
+    }
+            window.addEventListener('load', () => {
+            var myVar = setInterval(can, 250);
+            setTimeout(gayab , 10);
+        });
+        function can() {
+            if (count >= 18) {
+                console.log("Time Lapse completed by " + count);
+            }
+            else if (count < 18) {
+                anime();
+            }
+        }
+        var count = 0;
+        function anime() {
+            var word = ['W', 'e', 'l', 'c', 'o', 'm', 'e', ' ', 't', 'o', ' ', 'I', 'n', 'v', 'e', 'n', 't', 'o'];
+            document.getElementById('anime').innerHTML += word[count];
+            count += 1;
+            if (document.getElementById('anime') == "Welcome to Invento") {
+                clearInterval(myVar);
+            }
+        }
+        function gayab() 
+        {
+            document.querySelector('.loader').style = "visibility: hidden;";
+        }
+</script>
+</body>
+</html>
